@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/resposive.css">
+    <link rel="javaScript" href="JS/script.js"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a class="logo">Akash.</a>
+        <nav class="navbar">
+            <a href="/" class="homebar">Home</a>
+            <a href="/about">About</a>
+            <!-- <a href="/services">Services</a> -->
+            <a href="/portfolio">Portfolio</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Hobbies</h1>
+            <h3>Cricket</h3>
+            <p>Since my childhood, cricket has been my primary sporting interest, and I credit my passion for the game to my idol, Virat Kohli. His dedication, fitness, aggressiveness, never give up attitude and ability to bounce back from challenging situations inspire me greatly. I have actively participated in school and college tournaments, showcasing my skills as an all-rounder, specifically as a medium-pace bowler and batsman.</p>            
+            <h4>E-sports</h4>
+            <p>I have established myself as a competitive player in the realm of BGMI (Battlegrounds Mobile India), boasting an exceptional S+ career in esports. My journey has been defined by triumphs in numerous Scrims T2 tournaments, where I have consistently showcased my prowess and emerged victorious. Notably, my performances have garnered recognition, leading to a nomination for the MVP (Most Valuable Player) award.</p>
+            
+        </div>
+        <div class="home-sci">
+            <a href="https://www.facebook.com/profile.php?id=100010027477471&mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></box-icon></a>
+            <a href="https://instagram.com/akash17_2020?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"><i class='bx bxl-instagram'></i></box-icon></a>
+            <a href="https://www.linkedin.com/in/akash-pal-88a015234"><i class='bx bxl-linkedin'></i></box-icon></a>
+            <a href="mailto:akashpalm2017@gmail.com"><i class='bx bxl-gmail'></i></a>
+            
+            
+        </div>
+        
+    </section>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background:  #09151e;
+    color: #ededed;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.homebar{
+    color: #00abf0;
+}
+
+.home{
+    height: 110vh;
+    background: url('C:/Users/Akash/Python/CSS/PROJECT 2 (Portfilio Website)/Akash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{
+    /* background: yellowgreen; */
+    max-width: 600px;
+}
+
+.home-content h1{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:  #09151e;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.home-content h3{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:  #09151e;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.home-content h4{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content h4::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #09151e;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+
+.home-content p{
+    position: relative;
+    font-size: 16px;
+    margin: 5px 0 20px; 
+    text-align: justify;
+}
+
+.home-content p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:  #09151e;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+
+
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ffffC2;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.home-sci a:hover{
+    color:  #09151e;
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ffffC2;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+
+}
+
+/* KEYFRAME ANIMATIONS */
+
+@keyframes showRight{
+    100%{
+        width: 0;
+    }
+}
+/* Styles for desktop screens */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar a {
+    font-size: 15px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+  }
+  
+  /* Styles for mobile screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar a {
+      margin: 10px 0;
+    }
+    .home .home-content h1{
+        position: relative;
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    .home .home-content h3{
+        position: relative;
+        font-size: 20px;
+        font-weight: 700;
+        color: #00abf0;
+    }
+    .home .home-content h4{
+        position: relative;
+        font-size: 20px;
+        font-weight: 700;
+        color: #00abf0;
+    }
+    .home .home-content p{
+        position: relative;
+        font-size: 12px;
+        margin: 20px 0 40px;
+        text-align: justify;
+    }
+    .home .home-content .btn-box a{
+        display: flex;
+        justify-content: space-between;
+        font-size: small;
+        width: 90px;
+        height: 35px;
+    }
+    
+  }
+  
+
+    </style>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire me</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Send me details</h1>
+    </div>
+    <div class="box1">
+        <form onsubmit="myfunc(event)">
+            <input type="text" id="company_name" placeholder="Enter company name">
+            <input type="text" id="job_role" placeholder="Enter job role">
+            <input type="text" name="" id="location_1" placeholder="Enter location">
+            <input type="text" name="" id="amount_1" placeholder="Enter stipend amount">
+            <input type="text" name="" id="contact_no" placeholder="Enter contact no">
+            <input type="submit" name="" value="Submit">
+        </form>
+    </div>
+    <style>
+        body{
+            background-color: #081b29;
+            background: rgba(0,0,0,0.7)url(https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1203&q=80);
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+        .box1{
+            width: 760px;
+            height: 520px;
+            background: transparent;
+            border-color: black;
+            color: black;
+            top: 60%;
+            left: -10%;
+            position: absolute;
+            transform: translate(70%,-60%);
+            box-sizing: border-box;
+            padding: 50px 30px;
+        }
+        .header{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+        .box1 input{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .box1 input[type="text"]{
+            border: black;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            height: 30px;
+            background-color: #fff;
+            color: black;
+            font-size: 12px;
+        }
+        .box1 input[type="submit"]{
+            height: 40px;
+            width: 100px;
+            left: 10px;
+            cursor: pointer;
+        }
+        .box1 input[type="submit"]:hover{
+            background-color: #081b29;
+            color: whitesmoke;
+        }
+    </style>
+    <style>
+        @media (max-width: 786px){
+            body{
+            background-color: #081b29;
+            background: rgba(0,0,0,0.7)url(https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1203&q=80);
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+        .box1{
+            width: 300px;
+            height: 520px;
+            background: transparent;
+            border-color: black;
+            color: black;
+            top: 60%;
+            left: -50%;
+            position: absolute;
+            transform: translate(70%,-60%);
+            box-sizing: border-box;
+            padding: 50px 30px;
+        }
+        .header{
+            text-align: center;
+            color: white;
+            font-size: 10px;
+            transform: translate(-10%,160px);
+        }
+        .box1 input{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .box1 input[type="text"]{
+            border: black;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            height: 30px;
+            background-color: #fff;
+            color: black;
+            font-size: 12px;
+        }
+        .box1 input[type="submit"]{
+            height: 40px;
+            width: 100px;
+            left: 10px;
+            cursor: pointer;
+        }
+        .box1 input[type="submit"]:hover{
+            background-color: #081b29;
+            color: whitesmoke;
+        }            
+        }
+            
+    </style>
+
+    <script type="text/javascript">
+        function myfunc(event){
+            event.preventDefault();
+            var company_name = document.getElementById("company_name").value;
+            var job_role = document.getElementById("job_role").value;
+            var location_1 = document.getElementById("location_1").value;
+            var amount_1 = document.getElementById("amount_1").value;
+            var contact_no = document.getElementById("contact_no").value;
+
+            localStorage.setItem('company_name',company_name);
+            localStorage.setItem('job_role', job_role);
+            localStorage.setItem('location_1', location_1);
+            localStorage.setItem('amount_1', amount_1);
+            localStorage.setItem('contact_no',contact_no);
+
+        }
+
+    </script>
+</body>
+</html>
